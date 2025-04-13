@@ -15,6 +15,10 @@ namespace lab08_swe_lab
         private void calc_Click(object sender, EventArgs e)
         {
             try {
+                if (exVelo.Text == "0" || minit.Text == "0" || mfinal.Text == "0")
+                {
+                    MessageBox.Show("Cannot be zero");
+                }
                 double ve = double.Parse(exVelo.Text);
                 double mi = double.Parse(minit.Text);
                 double mf = double.Parse(mfinal.Text);
