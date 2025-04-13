@@ -48,9 +48,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(12, 22);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(91, 15);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Exhaust Velocity";
             // 
             // exVelo
             // 
@@ -71,9 +71,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(118, 22);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(66, 15);
             label2.TabIndex = 2;
-            label2.Text = "label2";
+            label2.Text = "Initial Mass";
             // 
             // mfinal
             // 
@@ -87,9 +87,9 @@
             label3.AutoSize = true;
             label3.Location = new Point(224, 22);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(62, 15);
             label3.TabIndex = 4;
-            label3.Text = "label3";
+            label3.Text = "Final Mass";
             // 
             // calc
             // 
@@ -97,18 +97,18 @@
             calc.Name = "calc";
             calc.Size = new Size(75, 23);
             calc.TabIndex = 6;
-            calc.Text = "button1";
+            calc.Text = "Calculate";
             calc.UseVisualStyleBackColor = true;
             calc.Click += calc_Click;
             // 
             // result
             // 
             result.AutoSize = true;
-            result.Location = new Point(17, 19);
+            result.Location = new Point(12, 19);
             result.Name = "result";
-            result.Size = new Size(38, 15);
+            result.Size = new Size(43, 15);
             result.TabIndex = 7;
-            result.Text = "label4";
+            result.Text = "output";
             result.Visible = false;
             // 
             // groupBox1
@@ -119,7 +119,7 @@
             groupBox1.Size = new Size(262, 52);
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            groupBox1.Text = "Output";
             // 
             // groupBox2
             // 
@@ -134,7 +134,7 @@
             groupBox2.Size = new Size(334, 77);
             groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
-            groupBox2.Text = "groupBox2";
+            groupBox2.Text = "Input";
             // 
             // label4
             // 
