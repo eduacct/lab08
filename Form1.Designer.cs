@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            ve = new TextBox();
-            m0 = new TextBox();
+            exVelo = new TextBox();
+            minit = new TextBox();
             label2 = new Label();
-            mf = new TextBox();
+            mfinal = new TextBox();
             label3 = new Label();
-            button1 = new Button();
+            calc = new Button();
+            result = new Label();
             SuspendLayout();
             // 
             // label1
@@ -46,19 +47,19 @@
             label1.TabIndex = 0;
             label1.Text = "label1";
             // 
-            // ve
+            // exVelo
             // 
-            ve.Location = new Point(9, 170);
-            ve.Name = "ve";
-            ve.Size = new Size(100, 23);
-            ve.TabIndex = 1;
+            exVelo.Location = new Point(9, 170);
+            exVelo.Name = "exVelo";
+            exVelo.Size = new Size(100, 23);
+            exVelo.TabIndex = 1;
             // 
-            // m0
+            // minit
             // 
-            m0.Location = new Point(115, 170);
-            m0.Name = "m0";
-            m0.Size = new Size(100, 23);
-            m0.TabIndex = 3;
+            minit.Location = new Point(115, 170);
+            minit.Name = "minit";
+            minit.Size = new Size(100, 23);
+            minit.TabIndex = 3;
             // 
             // label2
             // 
@@ -69,12 +70,12 @@
             label2.TabIndex = 2;
             label2.Text = "label2";
             // 
-            // mf
+            // mfinal
             // 
-            mf.Location = new Point(221, 170);
-            mf.Name = "mf";
-            mf.Size = new Size(100, 23);
-            mf.TabIndex = 5;
+            mfinal.Location = new Point(221, 170);
+            mfinal.Name = "mfinal";
+            mfinal.Size = new Size(100, 23);
+            mfinal.TabIndex = 5;
             // 
             // label3
             // 
@@ -85,26 +86,38 @@
             label3.TabIndex = 4;
             label3.Text = "label3";
             // 
-            // button1
+            // calc
             // 
-            button1.Location = new Point(126, 199);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 6;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            calc.Location = new Point(126, 199);
+            calc.Name = "calc";
+            calc.Size = new Size(75, 23);
+            calc.TabIndex = 6;
+            calc.Text = "button1";
+            calc.UseVisualStyleBackColor = true;
+            calc.Click += calc_Click;
+            // 
+            // result
+            // 
+            result.AutoSize = true;
+            result.Location = new Point(148, 58);
+            result.Name = "result";
+            result.Size = new Size(38, 15);
+            result.TabIndex = 7;
+            result.Text = "label4";
+            result.Visible = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(333, 230);
-            Controls.Add(button1);
-            Controls.Add(mf);
+            Controls.Add(result);
+            Controls.Add(calc);
+            Controls.Add(mfinal);
             Controls.Add(label3);
-            Controls.Add(m0);
+            Controls.Add(minit);
             Controls.Add(label2);
-            Controls.Add(ve);
+            Controls.Add(exVelo);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Rocket Equation Calculator";
@@ -116,11 +129,12 @@
         #endregion
 
         private Label label1;
-        private TextBox ve;
-        private TextBox m0;
+        private TextBox exVelo;
+        private TextBox minit;
         private Label label2;
-        private TextBox mf;
+        private TextBox mfinal;
         private Label label3;
-        private Button button1;
+        private Button calc;
+        private Label result;
     }
 }
