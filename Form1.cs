@@ -6,5 +6,10 @@ namespace lab08_swe_lab
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
