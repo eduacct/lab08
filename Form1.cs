@@ -17,9 +17,20 @@ namespace lab08_swe_lab
             double ve = double.Parse(exVelo.Text);
             double mi = double.Parse(minit.Text);
             double mf = double.Parse(mfinal.Text);
-            double dv = ve * Math.Log(mi/mf);
-            result.Text = dv.ToString();
-            result.Visible = true;
+            try
+            {
+                double dv = ve * Math.Log(mi / mf);
+                result.Text = dv.ToString();
+                result.Visible = true;
+            }
+            catch {
+                MessageBox.Show("Invalid Input");
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
