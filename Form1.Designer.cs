@@ -36,12 +36,17 @@
             label3 = new Label();
             calc = new Button();
             result = new Label();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            label4 = new Label();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(9, 152);
+            label1.Location = new Point(12, 22);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 0;
@@ -49,14 +54,14 @@
             // 
             // exVelo
             // 
-            exVelo.Location = new Point(9, 170);
+            exVelo.Location = new Point(12, 40);
             exVelo.Name = "exVelo";
             exVelo.Size = new Size(100, 23);
             exVelo.TabIndex = 1;
             // 
             // minit
             // 
-            minit.Location = new Point(115, 170);
+            minit.Location = new Point(118, 40);
             minit.Name = "minit";
             minit.Size = new Size(100, 23);
             minit.TabIndex = 3;
@@ -64,7 +69,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(115, 152);
+            label2.Location = new Point(118, 22);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 2;
@@ -72,7 +77,7 @@
             // 
             // mfinal
             // 
-            mfinal.Location = new Point(221, 170);
+            mfinal.Location = new Point(224, 40);
             mfinal.Name = "mfinal";
             mfinal.Size = new Size(100, 23);
             mfinal.TabIndex = 5;
@@ -80,7 +85,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(221, 152);
+            label3.Location = new Point(224, 22);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 4;
@@ -88,7 +93,7 @@
             // 
             // calc
             // 
-            calc.Location = new Point(126, 199);
+            calc.Location = new Point(145, 153);
             calc.Name = "calc";
             calc.Size = new Size(75, 23);
             calc.TabIndex = 6;
@@ -99,29 +104,64 @@
             // result
             // 
             result.AutoSize = true;
-            result.Location = new Point(148, 58);
+            result.Location = new Point(17, 19);
             result.Name = "result";
             result.Size = new Size(38, 15);
             result.TabIndex = 7;
             result.Text = "label4";
             result.Visible = false;
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(result);
+            groupBox1.Location = new Point(12, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(262, 52);
+            groupBox1.TabIndex = 8;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(exVelo);
+            groupBox2.Controls.Add(label1);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(mfinal);
+            groupBox2.Controls.Add(minit);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Location = new Point(12, 70);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(334, 77);
+            groupBox2.TabIndex = 9;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "groupBox2";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 24F);
+            label4.Location = new Point(296, 19);
+            label4.Name = "label4";
+            label4.Size = new Size(64, 45);
+            label4.TabIndex = 10;
+            label4.Text = "🚀";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(333, 230);
-            Controls.Add(result);
+            ClientSize = new Size(372, 191);
+            Controls.Add(label4);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
             Controls.Add(calc);
-            Controls.Add(mfinal);
-            Controls.Add(label3);
-            Controls.Add(minit);
-            Controls.Add(label2);
-            Controls.Add(exVelo);
-            Controls.Add(label1);
             Name = "Form1";
             Text = "Rocket Equation Calculator";
             Load += Form1_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,5 +176,8 @@
         private Label label3;
         private Button calc;
         private Label result;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private Label label4;
     }
 }
